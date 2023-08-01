@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.cards{
+    display: flex;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.16);
+    border-radius: 0 20px 20px;
+}
+.card1{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 30px 40px 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.card1 h3, p{
+    color: rgb(168, 168, 168);
+}
+.card1 div{
+    margin: 20px 0;
+}
+.circle{
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 35px;
+    border-radius: 100%;
+}
+.result{
+    font-size: 3rem;
+    color: white;
+}
+h2{
+    margin: 20px 0 40px;
+}
+span{
+    color: rgba(71, 71, 71, 0.762);
+}
+
+
+.card2{
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+.sum{
+    margin-bottom: 20px;
+}
+.stats{
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    margin: 5px 0;
+}
+.stats div{
+    display: flex;
+}
+img{
+    margin-right: 5px;
+}
+h5{
+    color: black;
+}
+.react{
+    background-color:hsla(0, 100%, 67%, 0.3);
+    color: red
+}
+.mem{
+    background-color: hsla(39, 100%, 56%, 0.3);
+    color: orange;
+}
+.ver{
+    background-color: hsla(166, 100%, 37%, 0.3);
+    color: rgb(0, 180, 0);
+}
+.vis{
+    background-color: hsla(234, 85%, 45%, 0.3);
+    color: blue;
+}
+.button{
+    text-align: center;
+    margin-top: 20px;
+}
+button{
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 100px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+@media (max-width : 768px) {
+    body{
+        height: 100%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+}
